@@ -134,79 +134,16 @@
 		</div>
 	</div></section>
 	<section class="slide"><div>
-		<h2>В Интернете кто-то не прав</h2>
-		<ol>
-			<li class="next">какие разделители для сущностей выбрать</li>
-			<li class="next">очень длинные селекторы</li>
-			<li class="next">OOCSS, SMACSS, AMCSS</li>
-		</ol>
-	</div></section>
-	<section class="slide shout" id="wtf"><div>
-		<style>
-			#wtf h2
-			{
-				font-size: 150%;
-			}
-		</style>
-
-		<h2><code>WTF_jackie_chan.gif</code></h2>
-	</div></section>
-	<section class="slide"><div>
-		<p сlass="next">БЭМ пытается описать структуру вообще всего.</p>
-		<p class="next">Невероятная наглость.</p>
-	</div></section>
-	<section class="slide shout"><div>
-		<h2>Архитектура</h2>
-	</div></section>
-	<section class="slide shout org"><div>
-		<h2>Архитектура — это способ организовывать вещи и процесс.</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Архитектура</h2>
+		<h2>Про что я не буду говорить</h2>
 		<ul>
-			<li class="next">паттерны программирования</li>
-			<li class="next">структура файловой системы</li>
-			<li class="next">набор моудлей, уровни классов и сабклассов</li>
-			<li class="next">&hellip;</li>
+			<li class="next">Продавать волшебство</li>
+			<li class="next">Что такое БЭМ: <a href="https://ru.bem.info/">bem.info</a> и <a href="http://getbem.com/">getbem.com</a></li>
+			<li class="next">Подробности про технологии</li>
 		</ul>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Архитектура</h2>
-		<p>Как назвать компонент? А его файл? Куда его сохранить? Куда положить библиотеки? Как их подключить? Расширять их или править прямо в копии? Как обновляться? Стоит ли использовать неймспейсы?</p>
+		<p>БЭМ пытается описать структуру вообще всего.</p>
 	</div></section>
-
-	<section class="slide"><div>
-		<h2>Новый проект</h2>
-		<ul>
-			<li class="next">copy&paste</li>
-			<li class="next">yeoman</li>
-			<li class="next">framework</li>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Что плохо?</h2>
-		<ul>
-			<li class="next">технологии диктуют структуру</li>
-			<li class="next">новый человек ничего не понимает</li>
-			<li class="next">где искать ошибку</li>
-			<li class="next">структура приложения сложная</li>
-		</ul>
-		<p class="next">Поэтому БЭМ не про технологии, а про архитектуру</p>
-	</div></section>
-
-	<section class="slide shout org"><div>
-		<h2>Архитектура — это способ организовывать вещи и процесс.</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Как это сделать?</h2>
-		<ul>
-			<li class="next">БЭМ — это точно такой же набор условностей,</li>
-			<li class="next">про весь фронтенд стек: от сервера до верстки</li>
-		</ul>
-	</div></section>
-
 	<section class="slide"><div>
 		<h2>БЭМ</h2>
 		<ul>
@@ -235,145 +172,45 @@
 
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Уровни доопределения</h2>
-		<p>Спорно. Опционально. Как минимум интересно.</p>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Уровни доопределения</h2>
-		<ul>
-			<li>Библиотека</li>
-			<li>Мой проект</li>
-			<li>Бандл моего проекта</li>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Уровни доопределения</h2>
-		<ul>
-			<li>Библиотека/Общее</li>
-			<li>Библиотека/Компонент</li>
-			<li>Мой проект</li>
-			<li>Бандл моего проекта</li>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Струтктура файловой системы</h2>
-	</div></section>
-
-
-	<section class="slide"><div>
-		<pre>
-			<code class="small">
-./
-  ./libs/
-    ./libs/lib-1/blocks/...
-    ./libs/lib-2/blocks/...
-  ./my-blocks/...
-  ./my-bundles/
-    ./my-bundles/page-name
-      ./my-bundles/page-name/blocks/...
-      ./my-bundles/page-name/page-name.min.js
-      ./my-bundles/page-name/page-name.min.css
-			</code>
-		</pre>
-	</div></section>
-
-	<section class="slide"><div>
-		<pre>
-			<code class="small">
-../my-block
-  ../my-block/__elem/
-    ../my-block/__elem/my-block__elem.js
-  ../my-block/_mod/
-    ../my-block/_mod/my-block_mod.css
-  ../my-block/my-block.css
-  ../my-block/my-block.js
-  ../my-block/my-block.illustration.png
-  ../my-block/my-block.icons.svg
-
-			</code>
-		</pre>
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2>I'll be back</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>БЭМ</h2>
-		<p class="next">Порядок. Умещается в голове.</p>
-		<ul>
-			<li class="next">Проблемы легко локлизовать и найти</li>
-			<li class="next">создание компонент</li>
-			<li class="next">переход между проектами: don't panic!</li>
-			<li class="next">новый проект: никаких новых условностей</li>
-			<li class="next">выделение общих блоков</li>
-		</ul>
-	</li>
-
-	</div></section>
-
 	<section class="slide shout"><div>
 		<h2>Любой стек</h2>
 	</div></section>
 
-	<section class="slide shout"><div>
+	<section class="slide"><div>
+		<h2>БЭМ и Angular</h2>
+		<ul>
+			<li class="next"><a href="https://github.com/search?utf8=%E2%9C%93&q=bem+angular">bem + angular on github</a></li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
 		<h2><a href="https://github.com/varya/gulp-express-bem-angular-stub">varya/gulp-express-bem-angular-stub</a></h2>
 	</div></section>
 
-
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/angular.png" alt="">
+	<section class="slide"><div>
+		<h2>БЭМ и Backbone</h2>
 	</div></section>
 
-	<section class="slide shout"><div>
+	<section class="slide"><div>
 		<h2><a href="https://github.com/maetchkin/qex-controls">maetchkin/qex-controls</a></h2>
 	</div></section>
 
+	<section class="slide"><div>
+		<h2>Тесты и документация</h2>
+		<ul>
+			<li><a href="https://github.com/bem/bem-components/blob/v2/common.blocks/button/button.spec.js">https://github.com/bem/bem-components/blob/v2/common.blocks/button/button.spec.js</a></li>
+			<li><a href="https://github.com/bem/bem-components/blob/v2/common.blocks/button/button.en.md">https://github.com/bem/bem-components/blob/v2/common.blocks/button/button.en.md</a></li>
+		</ul>
 
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/backbone.png" alt="">
 	</div></section>
 
-	<section class="slide shout"><div>
+	<section class="slide"><div>
+		<h2>БЭМ, React и *flux</h2>
+	</div></section>
+
+	<section class="slide"><div>
 		<h2><a href="https://github.com/tyv/bem-react-reflux">tyv/bem-react-reflux</a></h2>
 	</div></section>
-
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/react.png" alt="">
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2><a href="https://github.com/bem-node/bem-node">bem-node/bem-node</a></h2>
-	</div></section>
-
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/node.js.png" alt="">
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2><a href="https://github.com/bem/bem-components">bem/bem-components</a></h2>
-	</div></section>
-
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/tests.png" alt="">
-	</div></section>
-
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/docs.png" alt="">
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2><a href="https://github.com/search?q=bem&type=Repositories">search bem</a></h2>
-	</div></section>
-
-	<section class="slide cover screenshot"><div>
-		<img src="shower/themes/ribbon/pictures/search.png" alt="">
-	</div></section>
-
 
 	<section class="slide"><div>
 		<h2>Подводя итог</h2>
@@ -382,21 +219,14 @@
 			<li>Инкапсуляция технологий</li>
 			<li>Библиотеки</li>
 			<li>Наследование</li>
-			<li>Структура, которую можно удержать в голове</li>
+			<li><strong>Структура, которую можно удержать в голове</strong></li>
 		</ul>
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2>гибкость</h2>
 	</div></section>
 
 	<section class="slide"><div>
 		<h2>Спасибо</h2>
 		<p>и не забывайте смотреть по сторонам</p>
 	</div></section>
-
-
-
 
 	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
 	<!--
